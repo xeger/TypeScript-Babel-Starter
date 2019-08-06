@@ -1,8 +1,11 @@
 export class C {
-    private x = 10
-    getX = () => this.x;
-    setX = (newVal: number) => { this.x = newVal; }
+  s: string;
+
+  constructor(s) {
+    this.s = s;
+  }
 }
 
-export let x = new C();
-export let y = { ...{ some: "value" } }
+export function f(x: number) {
+  return x + 1;
+}
